@@ -53,11 +53,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktContactsJsUI", "PacktC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter11", "Chapter11", "{9350B4B6-840A-4EC4-BDB3-D3A6C68C7CEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWalletDemo", "AsyncWalletDemo\AsyncWalletDemo.csproj", "{7AAE1B87-9E32-4889-91F3-3676E65AF019}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncWalletDemo", "AsyncWalletDemo\AsyncWalletDemo.csproj", "{7AAE1B87-9E32-4889-91F3-3676E65AF019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "compression-cache-demo", "compression-cache-demo\compression-cache-demo.csproj", "{5B30B290-FC90-4862-81EF-FAA78FC593A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "compression-cache-demo", "compression-cache-demo\compression-cache-demo.csproj", "{5B30B290-FC90-4862-81EF-FAA78FC593A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "distributed-cache-demo", "distributed-cache-demo\distributed-cache-demo.csproj", "{C8763B1E-1F36-43CC-A06D-1140DAE413EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "distributed-cache-demo", "distributed-cache-demo\distributed-cache-demo.csproj", "{C8763B1E-1F36-43CC-A06D-1140DAE413EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter10", "Chapter10", "{0D601ED3-8C53-40E2-BCD4-090D1A0BF678}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "basics-logging", "basics-logging\basics-logging.csproj", "{B6779745-AA00-4492-9A10-F43EDDF02EC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWallet", "MyWallet\MyWallet.csproj", "{53D327A5-04FD-4C92-B608-2F1C13BC7BE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter08", "Chapter08", "{1A45F7F0-AED6-4917-930D-80F642EB0E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBudget", "PersonalBudget\PersonalBudget.csproj", "{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudegetIdentityDemo", "BudegetIdentityDemo\BudegetIdentityDemo.csproj", "{0BC49C12-6673-418C-8BE0-43D0E3C4AF22}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5B1981EA-987C-48F4-9F6F-39389E3EE15F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +155,26 @@ Global
 		{C8763B1E-1F36-43CC-A06D-1140DAE413EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8763B1E-1F36-43CC-A06D-1140DAE413EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8763B1E-1F36-43CC-A06D-1140DAE413EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6779745-AA00-4492-9A10-F43EDDF02EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6779745-AA00-4492-9A10-F43EDDF02EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6779745-AA00-4492-9A10-F43EDDF02EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6779745-AA00-4492-9A10-F43EDDF02EC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D327A5-04FD-4C92-B608-2F1C13BC7BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D327A5-04FD-4C92-B608-2F1C13BC7BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D327A5-04FD-4C92-B608-2F1C13BC7BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D327A5-04FD-4C92-B608-2F1C13BC7BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC49C12-6673-418C-8BE0-43D0E3C4AF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC49C12-6673-418C-8BE0-43D0E3C4AF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC49C12-6673-418C-8BE0-43D0E3C4AF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC49C12-6673-418C-8BE0-43D0E3C4AF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1981EA-987C-48F4-9F6F-39389E3EE15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1981EA-987C-48F4-9F6F-39389E3EE15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1981EA-987C-48F4-9F6F-39389E3EE15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1981EA-987C-48F4-9F6F-39389E3EE15F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,6 +199,10 @@ Global
 		{7AAE1B87-9E32-4889-91F3-3676E65AF019} = {9350B4B6-840A-4EC4-BDB3-D3A6C68C7CEC}
 		{5B30B290-FC90-4862-81EF-FAA78FC593A2} = {9350B4B6-840A-4EC4-BDB3-D3A6C68C7CEC}
 		{C8763B1E-1F36-43CC-A06D-1140DAE413EE} = {9350B4B6-840A-4EC4-BDB3-D3A6C68C7CEC}
+		{B6779745-AA00-4492-9A10-F43EDDF02EC3} = {0D601ED3-8C53-40E2-BCD4-090D1A0BF678}
+		{53D327A5-04FD-4C92-B608-2F1C13BC7BE2} = {0D601ED3-8C53-40E2-BCD4-090D1A0BF678}
+		{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2} = {1A45F7F0-AED6-4917-930D-80F642EB0E88}
+		{0BC49C12-6673-418C-8BE0-43D0E3C4AF22} = {1A45F7F0-AED6-4917-930D-80F642EB0E88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E46FAF55-8B3B-4088-B821-1E9E3EA60369}

@@ -24,6 +24,13 @@ namespace PacktContacts
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Claim Authorization Policy
+            services.AddAuthorization(cfg =>
+            {
+                cfg.AddPolicy("SuperUsers", p => p.RequireClaim("SuperUser", "True"));
+            });
+
+            //JWT 
             services.AddJwtBearerAuthentication("PacktAuthentication", options =>
             {
                 options.ClaimsIssuer = Configuration["Tokens:Issuer"];
@@ -37,32 +44,6 @@ namespace PacktContacts
                     ValidateLifetime = true
                 };
             });
-
-
-            //services.AddAuthentication(options =>
-            //{
-            //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            //}).AddJwtBearerAuthentication(o =>
-            //{
-            //    // You also need to update /wwwroot/app/scripts/app.js
-            //    o.ClaimsIssuer = Configuration["Tokens:Issuer"];
-            //    o.Audience = Configuration["Tokens:Audience"];
-            //    o.Events = new JwtBearerEvents()
-            //    {
-            //        OnAuthenticationFailed = c =>
-            //        {
-            //            c.Response.StatusCode = 500;
-            //            c.Response.ContentType = "text/plain";
-            //            if (Environment.IsDevelopment())
-            //            {
-            //                // Debug only, in production do not share exceptions with the remote host.
-            //                return c.Response.WriteAsync(c.Exception.ToString());
-            //            }
-            //            return c.Response.WriteAsync("An error occurred processing your authentication.");
-            //        }
-            //    };
-            //});
             services.AddMvc();
 
             // Add service and create Policy with options
