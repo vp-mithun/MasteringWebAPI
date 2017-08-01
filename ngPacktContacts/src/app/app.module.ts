@@ -1,3 +1,5 @@
+import { HttpModule } from '@angular/http';
+import { PacktAPIsService } from './packt-apis.service';
 import { PacktRoutesModule } from './packt-routes/packt-routes.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,9 +18,10 @@ import { ContactsComponent } from './contacts/contacts.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpModule,
     PacktRoutesModule
   ],
-  providers: [],
+  providers: [PacktAPIsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
