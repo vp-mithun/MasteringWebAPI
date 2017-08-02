@@ -21,6 +21,7 @@ namespace PacktContacts.Controllers
 
         // GET: api/Contacts
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> Get()
         {
             return Ok(await _context.Contacts.ToListAsync());

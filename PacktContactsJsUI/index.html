@@ -11,9 +11,10 @@
 <body>
     <div class="container">
         <h1>Mastering ASP.NET Core Web API</h1>
-        <h4>Consuming Web API using JavaScript or JQuery</h4>
+        <h4>Consuming Web API using JavaScript or JQuery or ReactJS</h4>
         <button onclick="gotoJsUI()" type="button" class="btn btn-primary">Using Javascript</button>
         <button onclick="gotoJQueryUI()" type="button" class="btn btn-success">Using JQuery</button>
+        <button onclick="gotoReactUI()" type="button" class="btn btn-info">Using ReactJS</button>
     </div>
 </body>
 
@@ -24,5 +25,8 @@
     }
     function gotoJQueryUI() {
         window.location.assign("JqueryUI.html");
+    }
+    function gotoReactUI() {
+        window.location.assign("reactUI.html");
     }
 </script>
