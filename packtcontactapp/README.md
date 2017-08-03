@@ -1,26 +1,24 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Mastering ASP.NET Web API
 
-## How to use this template
+Softwares required
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+* Latest NodeJS
+* Ionic 3
+* Visual Studio Code
+* Your favourite browser
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## Chapter 13 - Modern Web Frontends
 
-### With the Ionic CLI:
+### packtcontactapp Project
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Demo for consuming *PacktContacts* Web API created in Chapter 12
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+* Consuming using Ionic 3 (Hybrid Mobile App)
 
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
+### How to run?
+* Installed latest NodeJS
+* Run the `npm install` from root folder containing package.json. This will install all Node packages
+* **PacktContacts** Web API should be either hosted on IIS or running locally.
+* Update Web API endpoint URL in Ionic project
+* Run the command `ionic serve`. It automatically opens browser to start application
 

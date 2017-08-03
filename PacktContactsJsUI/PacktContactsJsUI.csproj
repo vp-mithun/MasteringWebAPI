@@ -141,6 +141,7 @@
     <Content Include="Scripts\react\react.js" />
     <Content Include="Scripts\react\react.min.js" />
     <Content Include="Views\web.config" />
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
