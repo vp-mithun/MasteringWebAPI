@@ -67,9 +67,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWallet", "MyWallet\MyWall
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter08", "Chapter08", "{1A45F7F0-AED6-4917-930D-80F642EB0E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalBudget", "PersonalBudget\PersonalBudget.csproj", "{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalBudget", "PersonalBudget\PersonalBudget.csproj", "{E3A04455-1B0F-4C0F-9832-8ACAA2FDEDE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudegetIdentityDemo", "BudegetIdentityDemo\BudegetIdentityDemo.csproj", "{0BC49C12-6673-418C-8BE0-43D0E3C4AF22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BudegetIdentityDemo", "BudegetIdentityDemo\BudegetIdentityDemo.csproj", "{0BC49C12-6673-418C-8BE0-43D0E3C4AF22}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5B1981EA-987C-48F4-9F6F-39389E3EE15F}"
 EndProject

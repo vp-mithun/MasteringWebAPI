@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using System.Net;
@@ -14,16 +15,18 @@ namespace filters_demo
             String message = String.Empty;
 
             var exceptionType = context.Exception.GetType();
-            
+
             if (exceptionType == typeof(ZeroValueException))
             {
                 message = context.Exception.Message;
                 status = HttpStatusCode.InternalServerError;
             }
-            HttpResponse response = context.HttpContext.Response;
-            response.StatusCode = (int)status;            
-            var err = message;
-            response.WriteAsync(err);
+            context.Result = new JsonResult(new
+            {
+                Code = (int)status,
+                Message = message
+            });
+
         }
     }
 }

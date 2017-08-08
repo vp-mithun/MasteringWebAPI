@@ -9,10 +9,12 @@ namespace filters_demo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Exception global filter added
+            // Exception global filter added            
             services.AddMvc(config => {
                 config.Filters.Add(typeof(PacktExceptionFilter));
-            });
+
+            services.AddScoped<PacktExceptionFilter>();
+        });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

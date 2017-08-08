@@ -11,6 +11,7 @@ namespace filters_demo.Controllers
     {
         // GET api/values
         [HttpGet]
+        [CheckPubliserName]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };

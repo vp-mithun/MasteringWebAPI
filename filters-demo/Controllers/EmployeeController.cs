@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace filters_demo.Controllers
 {
@@ -7,7 +6,7 @@ namespace filters_demo.Controllers
     
     public class EmployeeController : Controller
     {
-        // GET api/values/5
+        // GET api/values/5        
         [HttpGet("{id}")]
         public string Get(int id)
         {
