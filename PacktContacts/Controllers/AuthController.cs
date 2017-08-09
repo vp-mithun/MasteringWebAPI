@@ -3,14 +3,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using PacktContacts.Models;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
 namespace PacktContacts.Controllers
-{    
+{
     public class AuthController : Controller
     {
         private readonly PacktContactsContext _context;
@@ -19,32 +18,7 @@ namespace PacktContacts.Controllers
         {
             _context = context;
             _config = config;
-        }
-
-        private List<AppUser> AppUserList()
-        {
-            var listUsr = new List<AppUser>();
-            var testUser1 = new AppUser
-            {
-                Id = 1,
-                UserName = "mithunvp",
-                Password = "abcd123",
-                IsSuperUser = true
-            };
-
-            var testUser2 = new AppUser
-            {
-                Id = 2,
-                UserName = "Yogi",
-                Password = "abcd123",
-                IsSuperUser = false
-            };
-
-            listUsr.Add(testUser1);
-            listUsr.Add(testUser2);
-
-            return listUsr;
-        }
+        }        
 
         [HttpPost("api/auth/token")]
         public IActionResult CreateToken([FromBody] CredentialsModel model)
@@ -53,8 +27,8 @@ namespace PacktContacts.Controllers
             {
                 return BadRequest("Request is Null");
             }
-            var findusr = AppUserList().FirstOrDefault(m => m.UserName.Equals(model.Username) && m.Password.Equals(model.Password));
-            if(findusr != null)
+            var findusr = _context.AppUsers.FirstOrDefault(m => m.UserName.Equals(model.Username) && m.Password.Equals(model.Password));
+            if (findusr != null)
             {
                 var claims = new[]
                 {

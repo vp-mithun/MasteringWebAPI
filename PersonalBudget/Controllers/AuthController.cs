@@ -9,12 +9,12 @@ using System.Security.Claims;
 using System.Text;
 
 namespace PersonalBudget.Controllers
-{    
+{
     public class AuthController : Controller
     {
         private readonly PersonalBudgetContext _context;
-        private readonly IConfigurationRoot _config;
-        public AuthController(PersonalBudgetContext context, IConfigurationRoot config)
+        private readonly IConfiguration _config;
+        public AuthController(PersonalBudgetContext context, IConfiguration config)
         {
             _context = context;
             _config = config;

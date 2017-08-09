@@ -9,6 +9,7 @@ namespace PacktContacts.Models
             :base(options)
         {
         }
-        public DbSet<Contacts> Contacts { get; set; }        
+        public DbSet<Contacts> Contacts { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
     }
 }
